@@ -1,0 +1,34 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%BoundingBox: 0 0 300 200
+%%Title: EPS with Referenced JPG
+%%Creator: jakab.akos
+
+% Translate the coordinate system
+10 830 translate
+
+% Scale the coordinate system by a factor of 175 in both X and Y directions
+175 175 scale
+
+% Define the dimensions and transformation matrix for the image
+705
+218
+8
+[705 0 0 -218 0 0]
+
+% Embed the JPEG image "vsociety.jpg" and apply the DCTDecode filter
+(vs.jpg) (r) file /DCTDecode filter
+
+% Specify that the image will be displayed using the RGB color space
+false
+
+% Specify the number of color components for the image (3 for RGB)
+3
+
+% Display the image using the specified settings
+colorimage
+
+
+
+% Display the page
+showpage
+
